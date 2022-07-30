@@ -1,0 +1,59 @@
+/*
+Theme Name: Paperless
+Theme URI: https://raddy.dev/Paperless-theme
+Author: Raddy
+Author URI: https://raddy.dev
+Description: Our default theme for 2020 is designed to take full advantage of the flexibility of the block editor. Organizations and businesses have the ability to create dynamic landing pages with endless layouts using the group and column blocks. The centered content column and fine-tuned typography also makes it perfect for traditional blogs. Complete editor styles give you a good idea of what your content will look like, even before you publish. You can give your site a personal touch by changing the background colors and the accent color in the Customizer. The colors of all elements on your site are automatically calculated based on the colors you pick, ensuring a high, accessible color contrast for your visitors.
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
+Version: 1.3
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: twentytwenty
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* Adobe Font */
+@import url("https://use.typekit.net/imp2jke.css");
+
+
+:where(.wp-block-group.has-background) {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/*-------------------------------------*/
+/* Category Sidebar
+/*-------------------------------------*/
+.category_sidebar {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.category_sidebar li {
+  padding-bottom: 10px;
+}
+
+
+
+
+/*-------------------------------------*/
+/* Fixes Icon Alignment on Single Post
+/*-------------------------------------*/
+
+.post-information .wp-block-image {
+  line-height: 0;
+}
+
+/*-------------------------------------*/
+/* Fixes Blog Post Mobile Order
+/*-------------------------------------*/
+@media only screen and (max-width: 788px) {
+  .flex-reverse-order {
+    flex-direction: column-reverse;
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 2,
+  "settings": {
+    "layout": {
+      "contentSize": "1183px",
+      "wideSize": "1183px"
+    },
+    "color": {
+      "palette": [
+        {
+          "slug": "paperless-black",
+          "color": "#131313",
+          "name": "Black"
+        },
+        {
+          "slug": "paperless-gray",
+          "color": "#8B8B8B",
+          "name": "Gray"
+        },
+        {
+          "slug": "paperless-white",
+          "color": "#F7F7F7",
+          "name": "White"
+        }
+      ]
+    },
+    "typography": {
+      "fontFamilies": [
+        {
+          "fontFamily": "'Inter', sans-serif",
+          "slug": "inter",
+          "name": "Body - Inter",
+          "fontFace": [
+            {
+              "fontFamily": "'Inter', sans-serif",
+              "fontWeight": "300",
+              "fontStyle": "normal",
+              "fontStretch": "normal",
+              "src": ["file:./assets/fonts/inter/Inter-Light.ttf"]
+            },
+            {
+              "fontFamily": "'Inter', sans-serif",
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "fontStretch": "normal",
+              "src": ["file:./assets/fonts/inter/Inter-Regular.ttf"]
+            }
+          ]
+        },
+        {
+          "fontFamily": "Stolzl, Arial, sans-serif",
+          "slug": "stolzl",
+          "name": "Headings - Stolzl"
+        }
+      ],
+      "fontSizes": [
+        {
+          "slug": "small",
+          "size": "0.64rem",
+          "name": "Small"
+        },
+        {
+          "slug": "medium",
+          "size": "0.8rem",
+          "name": "Medium"
+        },
+        {
+          "slug": "regular",
+          "size": "1rem",
+          "name": "Regular"
+        }
+      ]
+    },
+    "custom": {
+      "typography": {
+        "font-size": {
+          "heading-1": "clamp(2.113rem, 1.9252rem + 0.9390000000000001vw, 3.052rem)",
+          "heading-2": "clamp(1.699rem, 1.5506000000000002rem + 0.7419999999999998vw, 2.441rem)",
+          "heading-3": "clamp(1.35rem, 1.2294rem + 0.603vw, 1.953rem)",
+          "heading-4": "clamp(1.253rem, 1.1909999999999998rem + 0.31000000000000005vw, 1.563rem)",
+          "heading-5": "clamp(1.063rem, 1.0255999999999998rem + 0.18700000000000006vw, 1.25rem)",
+          "heading-6": "clamp(1.063rem, 1.0255999999999998rem + 0.18700000000000006vw, 1.25rem)"
+        }
+      },
+      "line-height": {
+        "tiny": 1.15,
+        "small": 1.3,
+        "medium": 1.4,
+        "normal": 1.6
+      }
+    },
+    "spacing": {
+      "padding": true,
+      "margin": true,
+      "units": ["px", "em", "rem", "vh", "vw", "%"]
+    },
+    "border": {
+      "radius": true,
+      "color": true,
+      "style": true,
+      "width": true
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "var(--wp--preset--color--white)",
+      "text": "var(--wp--preset--color--paperless-black)"
+    },
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--inter)",
+      "lineHeight": "1.75",
+      "fontSize": "1rem"
+    },
+    "elements": {
+      "h1": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--stolzl)",
+          "fontWeight": "800",
+          "lineHeight": "var(--wp--custom--line-height--small)",
+          "fontSize": "var(--wp--custom--typography--font-size--heading-1)"
+        }
+      },
+      "h2": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--stolzl)",
+          "fontWeight": "800",
+          "lineHeight": "var(--wp--custom--line-height--small)",
+          "fontSize": "var(--wp--custom--typography--font-size--heading-2)"
+        }
+      },
+      "h3": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--stolzl)",
+          "fontWeight": "800",
+          "lineHeight": "var(--wp--custom--line-height--small)",
+          "fontSize": "var(--wp--custom--typography--font-size--heading-3)"
+        }
+      },
+      "h4": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--stolzl)",
+          "fontWeight": "800",
+          "lineHeight": "var(--wp--custom--line-height--small)",
+          "fontSize": "var(--wp--custom--typography--font-size--heading-4)"
+        }
+      },
+      "h5": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--stolzl)",
+          "fontWeight": "800",
+          "lineHeight": "var(--wp--custom--line-height--small)",
+          "fontSize": "var(--wp--custom--typography--font-size--heading-5)"
+        }
+      },
+      "h6": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--stolzl)",
+          "fontWeight": "800",
+          "lineHeight": "var(--wp--custom--line-height--small)",
+          "fontSize": "var(--wp--custom--typography--font-size--heading-6)"
+        }
+      },
+      "link": {
+        "color": {
+          "text": "var(--wp--preset--color--paperless-black)"
+        }
+      }
+    },
+    "blocks": {
+      "core/latest-posts": {
+        "spacing": {
+          "padding": {
+            "bottom": "20px"
+          }
+        }
+      },
+      "core/button": {
+        "border": {
+          "color": "currentColor",
+          "radius": "0"
+        },
+        "color": {
+          "background": "var(--wp--preset--color--paperless-black)",
+          "text": "var(--wp--preset--color--paperless-white)"
+        },
+        "spacing": {
+          "padding": {
+            "top": "0.7em",
+            "right": "1.6em",
+            "bottom": "0.7em",
+            "left": "1.6em"
+          }
+        },
+        "typography": {
+          "fontSize": "va(--wp--prset--font-size--regular)",
+          "lineHeight": "var(--wp--custom--line-height--normal)"
+        }
+      }
+    }
+  },
+  "templateParts": [
+    {
+      "name": "header",
+      "area": "header",
+      "title": "Header"
+    },
+    {
+      "name": "footer",
+      "area": "footer",
+      "title": "Footer"
+    }
+  ]
+}
